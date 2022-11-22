@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="date">Age: </label>
+            <input type="number" id="age">
+            <br>
+            
+            <label for="gender">Gennder: </label>
+            <input type="text" id="gender">
+            <br>
+            
+            <label for="location">Location: </label>
+            <input type="text" id="location">
+            <br>
+            <label for="cohort">Cohort: </label>
+            <input type="number" id="cohort">
+            <br>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+            <br>
+            
+            <input type="button" id="submit" value="Submit">
+            <br>
+    </form>
+    <table id="table">
+        <caption>Student Table</caption>
+        <thead>
+            <tr>
+                <th>
+                    age
+                </th>
+                <th>
+                    gender
+                </th>
+                <th>
+                    location
+                </th>
+                <th>
+                    cohort
+                </th>
+                <th>
+                    name
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    25
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    Seattle
+                </td>
+                <td>
+                    10
+                </td>
+                <td>
+                    Jessica
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    32
+                </td>
+                <td>
+                   Male
+                </td>
+                <td>
+                    SanFran
+                </td>
+                <td>
+                    11
+                </td>
+                <td>
+                    Brian
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    56
+                </td>
+                <td>
+                   Female
+                </td>
+                <td>
+                    Cupertino
+                </td>
+                <td>
+                    7
+                </td>
+                <td>
+                    Irma
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    35
+                </td>
+                <td>
+                    Male
+                </td>
+                <td>
+                    Bellevue
+                </td>
+                <td>
+                    10
+                </td>
+                <td>
+                    Tommy
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    23
+                </td>
+                <td>
+                    N/A
+                </td>
+                <td>
+                    Seattle
+                </td>
+                <td>
+                    10
+                </td>
+                <td>
+                    James
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+            
+        document.getElementById("submit").onclick=function()
+        {
+        
+            var table = document.getElementById("table");
+            var row = table.insertRow(-1);
+            var age = row.insertCell(0);
+            var gender = row.insertCell(1);
+            var location = row.insertCell(2);
+            var cohort = row.insertCell(3);
+            var name = row.insertCell(4);
+            age.innerText = document.getElementById("age").value;
+            gender.innerText = document.getElementById("gender").value;
+            location.innerText = document.getElementById("location").value;
+            cohort.innerText = document.getElementById("cohort").value;
+            name.innerText = document.getElementById("name").value;
+            
+        }
+    
+    </script>
+    <footer>
+        here there be feet
+    </footer>
+</body>
+</html>
