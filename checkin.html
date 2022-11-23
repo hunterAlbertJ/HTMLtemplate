@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #firstDiv{
+            background-color: lightgray;
+            font-style: italic;
+        }
+        div{
+            margin: 1em;
+            padding: .5em;
+        }
+        div:nth-child(2){
+            background-color: black;
+            color:yellow
+        }
+        div:nth-child(3){
+            background-color: lightblue;
+        }
+        div > div {
+            background-color: maroon;
+            color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="firstDiv">
+        <ul>
+            <li>
+                Thai
+            </li>
+            <li>
+               Korean
+            </li>
+            <li>
+                Sushi
+            </li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>
+                Walle
+            </li>
+            <li>
+                Atlantis
+            </li>
+            <li>
+                Treasure Planet
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div>
+            <ul>
+                <li>
+                    90 day fiance 
+                </li>
+                <li>
+                    Love is blind
+                </li>
+                <li>
+                    Married at first sight
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
