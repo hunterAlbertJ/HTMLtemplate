@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"> 
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 1em;
+            margin: .25em;
+           display: flex;
+           justify-content: center;
+           background-color: lightblue;
+        }
+        div > div{
+            background-color: aliceblue;
+        }
+        #navBar{
+            display:flex;
+            justify-content: space-between;
+        }
+        #portraitContainer{
+            display:flex;
+            justify-content: space-evenly;
+        }
+        #projectContainer{
+            display:flex;
+            justify-content: space-evenly;
+        }
+        #portraitImg{
+            border-radius: 50%;
+        }
+        body{
+            width: 1000px;
+           background-color: beige;
+        }
+        #leftNav{
+            width: 1em;
+            height: 1em;
+        }
+        #rightNav{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div id="navBar">
+        <div id="leftNav">
+            <img src="Amazon_logo.svg.png">
+        </div>
+        <div id="rightNav">
+                <div>
+                    <a href="#portraitContainer">About</a>
+                </div>
+                <div>
+                    <a href="#resumeBox"> Resume </a>
+                </div>
+                <div>
+                         <a href="#projectContainer"> Projects </a>
+                </div>
+                <div>
+                    <a href="#contact"> Contact</a>
+                </div>
+             
+            
+           
+               
+            
+        </div>
+    </div>
+    <div id="portraitContainer">
+        <div id="portrait">
+            <img id="portraitImg"src="james.jpg">
+        </div>
+        <div id="descriptionText">
+           Hi! I'm James. Welcome to my portfolio!
+        </div>
+    </div>
+    <div id="projectContainer">
+        <div id="project1">
+           <a href="https://github.com/hunterAlbertJ/2048"> Project 1: 2048</a>
+        </div>
+        <div id="project2">
+            <a href="https://github.com/Blue-Oceanz/Blue-Oceanz"> Project 2: Blue-Oceanz</a>
+        </div>
+        <div id="project3">
+            <a href="https://github.com/hunterAlbertJ/ExcusesExcuses"> Project 3: ExcusesExcuses </a>
+        </div>
+    </div>
+    <div id="resumeBox">
+        <div>
+            <a href="https://drive.google.com/file/d/1YbL-ax0iMki2LZY2mmpnJBgjkyy-OeJ_/view?usp=sharing">Resume Link</a>
+        </div>
+       
+    </div>
+    <div>
+        <div id="contact">
+           <a href="https://www.linkedin.com/">Linkden</a>
+        </div>
+       
+    </div>
+</body>
+</html>
