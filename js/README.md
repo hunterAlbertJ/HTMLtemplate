@@ -1,0 +1,2 @@
+Chapter 1
+All the computer knows is data, data is stored as either a 1 or a 0, on or off. All data is a sequence of this construct. Values are collections of bits and they all play different roles. The actual range of numbers that fit into a 64 bit chunk is in the range of 9 quadrillion. Calculations done on whole numbers less that the aformentioned limit are guaranteed to be presice. 

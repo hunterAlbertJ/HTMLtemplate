@@ -1,0 +1,23 @@
+.container{
+    padding-top: 20px;
+}
+.calculator-container{
+    background-color: darkgray;
+    height: 600px;
+    width: 475px;
+    border-radius: 10px;
+    padding-top: 20px;
+
+}
+.calculator-display{
+    border-radius: 10px;
+    height: 80px;
+    width: 400px;
+    background-color: lime;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 4em;
+   
+}
