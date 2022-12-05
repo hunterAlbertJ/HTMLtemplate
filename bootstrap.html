@@ -23,25 +23,55 @@
       <div class="container-fluid">
         <a class="navbar-brand">Navbar</a>
         <form class="d-flex">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add
+          </button>
         </form>
       </div>
     </nav>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<!-- Delete button modal-->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Delete Card</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+       Are You Sure?
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Delete button button -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button> -->
+<!-- Update button modal-->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Card</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="url" placeholder="Image URL"></input>
+        <div>
+          <input type="text" placeholder="Title">
+        </div>
+        <div>
+          <input type="text"placeholder="Description">
+        </div>
+      
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -50,7 +80,35 @@
     </div>
   </div>
 </div>
-    
+    <!-- Update button button -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button> -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Card</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="url" placeholder="Image URL"></input>
+        <div>
+          <input type="text" placeholder="Title">
+        </div>
+        <div>
+          <input type="text"placeholder="Description">
+        </div>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add Card</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="row">
       <div class="col-md-3">
         <div class="card">
@@ -59,9 +117,14 @@
             <div class="card" style="width: 18rem;">
               <img class="card-img-top" src="..." alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 id="cardTitle"class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
               </div>
             </div>
           </div>
@@ -76,7 +139,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -91,7 +159,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -106,69 +179,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="">
-          <div>
-          <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="">
-          <div>
-          <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="">
-          <div>
-          <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" alt="">
-          <div>
-          <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -185,7 +201,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -200,7 +221,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -215,7 +241,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -230,7 +261,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -247,7 +283,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -262,7 +303,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -277,7 +323,12 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
@@ -292,7 +343,94 @@
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="">
+          <div>
+          <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="">
+          <div>
+          <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="">
+          <div>
+          <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="">
+          <div>
+          <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+      Update
+    </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+      Delete
+    </button>
   </div>
 </div>
           </div>
