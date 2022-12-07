@@ -15,12 +15,16 @@ addButton.addEventListener("click", (e) => {
     let bottomTextDiv = document.createElement("div");
     topTextDiv.innerText = topText;
     bottomTextDiv.innerText = bottomText;
+    let deleteButton = document.createElement("button");
+    delete
 
     topTextDiv.setAttribute("id", "text");
     bottomTextDiv.setAttribute("id", "text");
     bottomTextDiv.setAttribute("innerText", bottomText);
     newCard.prepend(topTextDiv);
-    newCard.appendChild(bottomTextDiv)
+    newCard.appendChild(bottomTextDiv);
+    
     document.body.appendChild(newCard);
+    
 })
 console.log("test")
