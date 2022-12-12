@@ -1,7 +1,10 @@
 
 console.log("reading local storage", JSON.parse(localStorage.getItem("storageArr")));
 let localStorageArray = JSON.parse(localStorage.getItem("storageArr"));
+
 if(localStorageArray !== null){
+   
+
     for(i = 0; i < localStorageArray.length; i++){
     let row = document.getElementById("row");
     let newDiv = document.createElement("div");
@@ -42,6 +45,10 @@ document.getElementById("saveChangesButton").addEventListener("click", (e) =>{
     let jsonHolder = JSON.parse(localStorage.getItem("storageArr"))
     let lastClicked = JSON.parse(localStorage.getItem("currentClicked"))
 
+    for(value of jsonHolder){
+        console.log(value.id)
+    }
+
     let updateUrl = jsonHolder[lastClicked].url
     let updateTitle = jsonHolder[lastClicked].title
     let updateDescription = jsonHolder[lastClicked].description
@@ -80,6 +87,15 @@ document.querySelector("#yes").addEventListener("click", (e) => {
     let lastClicked = JSON.parse(localStorage.getItem("currentClicked"))
     jsonHolder.splice(lastClicked, 1)
     localStorage.setItem("storageArr", JSON.stringify(jsonHolder))
+
+    let updateIdArr = JSON.parse(localStorage.getItem("storageArr"));
+    if(updateIdArr !== null){
+        for(i = 0; i < updateIdArr.length; i++){
+            console.log(updateIdArr[i].id, "line 98")
+            updateIdArr[i].id = i;
+        }
+        localStorage.setItem("storageArr", JSON.stringify(updateIdArr))
+    }
     location.reload();
 
 })
