@@ -13,4 +13,5 @@ fetch(resource)
     const container = document.getElementsByClassName("container");
     console.log(data)
 })
+
 //loop over the data and append to the dom
