@@ -3,7 +3,7 @@ let objArray = [{name: "fox", link: "https://www.foxnews.com/"},{name: "fandango
 let inputValue = document.getElementById("textInput")
 let linkContainer = document.getElementById("linkContainer")
 
-let inputFunction = function(e){
+let inputFunction = function(e){    
     // console.log(e.target.value)
     linkContainer.innerHTML = "";
     for(i =0; i < objArray.length; i++){
@@ -17,6 +17,11 @@ let inputFunction = function(e){
             newCard.innerHTML = objArray[i].name
             newCard.setAttribute("id", "card")
             linkContainer.appendChild(newCard);
+            let testVal = JSON.stringify(e.target.value)
+            fetch(`"https://maps.googleapis.com/maps/api/place/autocomplete/${testVal}"`)
+            .then((response) => response.json())
+            .then((data) => {
+
         }
     }
 }

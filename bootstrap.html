@@ -12,7 +12,14 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <style>
     .col-md-3 {
-      border: 1px solid black;
+      border: 3px solid black;
+     margin: .5em;
+      
+      border-radius: .5em;
+    }
+    .row{
+      display: flex;
+      justify-content: space-between;
     }
   </style>
 </head>
@@ -21,7 +28,7 @@
   <div class="container">
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand">Navbar</a>
+        <a class="navbar-brand">Animal Card Generator!</a>
         <form class="d-flex">
           <button id="add" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Add
@@ -112,12 +119,12 @@
     <div class="row">
       <div class="col-md-3">
         <div class="card">
-          <img src="https://via.placeholder.com/150" alt="">
+          <img src="https://loremflickr.com/240/240/dog" alt="">
           <div>
             <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              
               <div class="card-body">
-                <h5 id="cardTitle" class="card-title">Card title</h5>
+                <h5 id="cardTitle" class="card-title">Dog Card</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's content.</p>
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
@@ -130,6 +137,249 @@
             </div>
           </div>
         </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/cat" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Cat Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/goat" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Goat Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/rabbit" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Bunny Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Random Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/rat" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Rat Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/chinchilla" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Chinchilla Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/horse" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Horse Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/snake" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Snake Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/deer" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Deer Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/bat" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Bat Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://loremflickr.com/240/240/lizard" alt="">
+          <div>
+            <div class="card" style="width: 18rem;">
+              
+              <div class="card-body">
+                <h5 id="cardTitle" class="card-title">Lizard Card</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal">
+                  Update
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
